@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Экспресс-курс по дизайну карточек</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- БЛОК 1: ШАПКА-->
+
+    <section class="section">
+        <div class="corner corner-tl"></div>
+        <div class="corner corner-tr"></div>
+        <div class="corner corner-bl"></div>
+        <div class="corner corner-br"></div>
+
+        <div class="blob blob-left"></div>
+        <div class="blob blob-right"></div>
+        <div class="blob blob-center"></div>
+
+        <div class="content">
+            <div class="hero-wrapper">
+                <div class="hero-left">
+                    <div class="badge">✨ ЭКСПРЕСС-КУРС</div>
+                    <h1>
+                        Научись создавать <span class="highlight">карточки</span><br />
+                        для маркетплейсов и зарабатывай<br />
+                        от 50 000₽ за 2 месяца
+                    </h1>
+                    <p class="subhead">
+                        Практика на реальных брендах, обратная связь по каждому заданию, поддержка в закрытом чате.
+                    </p>
+                    <div class="btn-group">
+                        <a href="https://web.telegram.org/k/#@bakush1n" class="btn">Записаться →</a>
+                        <a href="#" class="btn btn-outline">Программа</a>
+                    </div>
+                    <div class="market-icons">
+                        <div class="icon icon-wb"><img src="./img/wb.png" alt="Wildberries"></div>
+                        <div class="icon icon-oz"><img src="./img/ozon.png" alt="Ozon"></div>
+                        <div class="icon icon-oz"><img src="./img/market.png" alt="Market"></div>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <div class="photo-frame">
+                        <img class="author-photo" src="./img/dimaGl.png" alt="Дмитрий Бакушин" />
+                    </div>
+                    <div class="author-info-overlay">
+                        <div class="name">Дмитрий Бакушин</div>
+                        <div class="title">Основатель курса, дизайнер-эксперт</div>
+                        <div class="stats">
+                            <span>Свыше 20 учеников</span>
+                            <span>2 года в дизайне</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 2: СЛАЙДЕР С ИСТОРИЯМИ УЧЕНИКОВ-->
+    <section class="section">
+        <div class="corner corner-tl"></div>
+        <div class="corner corner-tr"></div>
+        <div class="corner corner-bl"></div>
+        <div class="corner corner-br"></div>
+
+        <div class="blob blob-left"></div>
+        <div class="blob blob-right"></div>
+        <div class="blob blob-center"></div>
+
+        <div class="content">
+            <h2 class="section-title">Реальные результаты <span>моих учеников</span></h2>
+            <div class="section-sub">🔥 Каждый из них начинал с нуля — твой успех уже близко!</div>
+
+            <div class="slider-container">
+                <div class="slider-track" id="sliderTrack">
+                    <!-- Карточка 1: Артем -->
+                    <div class="student-card">
+                        <img class="student-photo" src="./img/artem.png" alt="Артем" />
+                        <div class="student-info">
+                            <div class="student-name">Артем</div>
+                            <div class="student-status">Пришел с нуля</div>
+                            <div class="student-story">Без портфолио, с запросом выйти на первые деньги. Уже через месяц заработал свои первые <strong>30 000₽</strong> на дизайне и начал вести клиентов самостоятельно.</div>
+                            <div class="student-result">Результат: <strong>+30 000₽/мес</strong></div>
+                        </div>
+                    </div>
+                    <!-- Карточка 2: Юля -->
+                    <div class="student-card">
+                        <img class="student-photo" src="./img/Uliana.png" alt="Юля" />
+                        <div class="student-info">
+                            <div class="student-name">Юля</div>
+                            <div class="student-status">Мама в декрете</div>
+                            <div class="student-story">Без опыта в дизайне за первый месяц нашла первых клиентов и начала зарабатывать.</div>
+                            <div class="student-result">Результат: <strong>первые клиенты</strong></div>
+                        </div>
+                    </div>
+                    <!-- Карточка 3: Амир -->
+                    <div class="student-card">
+                        <img class="student-photo" src="./img/Amir.png" alt="Амир" />
+                        <div class="student-info">
+                            <div class="student-name">Амир</div>
+                            <div class="student-status">Студент</div>
+                            <div class="student-story">Пришел без клиентов, после обучения за первый месяц заработал <strong>25 000₽</strong>, а в последние пол года уже более <strong>40 000₽/мес</strong>.</div>
+                            <div class="student-result">Результат: <strong>25 000₽ → 40 000₽/мес</strong></div>
+                        </div>
+                    </div>
+                    <!-- Карточка 4: Малик -->
+                    <div class="student-card">
+                        <img class="student-photo" src="./img/malik.png" alt="Малик" />
+                        <div class="student-info">
+                            <div class="student-name">Малик</div>
+                            <div class="student-status">Школьник</div>
+                            <div class="student-story">Имел небольшой опыт, доход доходил до <strong>5 000₽/мес</strong>. После обучения достиг заработка <strong>45 000₽</strong>, развил ТГ-канал свыше <strong>800+</strong> подписчиков.</div>
+                            <div class="student-result">Результат: <strong>5 000₽ → 45 000₽/мес</strong></div>
+                        </div>
+                    </div>
+                    <!-- Карточка 5: Али -->
+                    <div class="student-card">
+                        <img class="student-photo" src="./img/Ali.png" alt="Али" />
+                        <div class="student-info">
+                            <div class="student-name">Али</div>
+                            <div class="student-status">Новичок</div>
+                            <div class="student-story">Вышел на свои первые <strong>15 000₽</strong> спустя 2 недели обучения, полностью с нуля.</div>
+                            <div class="student-result">Результат: <strong>15 000₽ за 2 недели</strong></div>
+                        </div>
+                    </div>
+                    <!-- Карточка 6: Влад -->
+                    <div class="student-card">
+                        <img class="student-photo" src="./img/vlad.png" alt="Влад" />
+                        <div class="student-info">
+                            <div class="student-name">Влад</div>
+                            <div class="student-status">Дизайнер с опытом</div>
+                            <div class="student-story">Под моим сопровождением заработал <strong>70 000₽</strong> за месяц, полностью окупил курс ещё до окончания. Планирует открывать студию, ТГ-канал с <strong>500+</strong> подписчиков.</div>
+                            <div class="student-result">Результат: <strong>70 000₽/мес</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-arrows">
+                    <div class="arrow" id="arrowLeft">←</div>
+                    <div class="arrow" id="arrowRight">→</div>
+                </div>
+                <div class="dots" id="dotsContainer"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 3: ДЛЯ КОГО ЭТОТ КУРС -->
+    <section class="section">
+        <div class="corner corner-tl"></div>
+        <div class="corner corner-tr"></div>
+        <div class="corner corner-bl"></div>
+        <div class="corner corner-br"></div>
+
+        <div class="blob blob-left"></div>
+        <div class="blob blob-right"></div>
+        <div class="blob blob-center"></div>
+
+        <div class="content">
+            <h2 class="section-title">Этот экспресс-курс <span>для тебя</span></h2>
+            <div class="section-sub">🚀 Если ты из одной из этих категорий — ты на нужном месте</div>
+
+            <div class="grid-4">
+                <div class="card">
+                    <div class="card-icon"><img src="./img/iconS.png" alt=""></div>
+                    <div class="card-title">Студенты</div>
+                    <div class="card-desc">
+                        Совмещай учёбу с <strong>доходом от 50 000₽</strong>.
+                        Гибкий график и профессия, которая не требует диплома.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><img src="./img/iconh.png" alt=""></div>
+                    <div class="card-title">Школьники</div>
+                    <div class="card-desc">
+                        Начни зарабатывать ещё до выпуска. <strong>Первые деньги</strong>
+                        уже через 2 недели — без опыта и вложений.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><img src="./img/iconm.png" alt=""></div>
+                    <div class="card-title">Мамы в декрете</div>
+                    <div class="card-desc">
+                        Работай из дома, когда удобно. <strong>Достойный доход</strong>
+                        без отрыва от семьи и сложных программ.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><img src="./img/iconr.png" alt=""></div>
+                    <div class="card-title">Работники найма</div>
+                    <div class="card-desc">
+                        Совмещай офисную работу и <strong>фриланс с доходом от 100 000₽</strong>.
+                        Полная свобода и контроль над своим временем.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 4: ПОЧЕМУ ДИЗАЙН КАРТОЧЕК-->
+    <section class="section">
+        <div class="corner corner-tl"></div>
+        <div class="corner corner-tr"></div>
+        <div class="corner corner-bl"></div>
+        <div class="corner corner-br"></div>
+
+        <div class="blob blob-left"></div>
+        <div class="blob blob-right"></div>
+        <div class="blob blob-center"></div>
+
+        <div class="content">
+            <h2 class="section-title">
+                Почему дизайн карточек — <br>это <span>лучший старт</span> в онлайне?
+            </h2>
+            <div class="section-sub">🔥 Три причины, которые меняют всё</div>
+
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon"><img src="./img/iconro.png" alt=""></div>
+                    <div class="card-title">Лёгкий старт</div>
+                    <div class="card-desc">
+                        Не нужен мощный компьютер — хватит обычного ноутбука.<br>
+                        Не нужно специальное образование — всему научим с нуля.<br>
+                        <strong>Порог входа минимальный</strong>, а результат виден уже через 2 недели.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><img src="./img/iconme.png" alt=""></div>
+                    <div class="card-title">Перспективы заработка</div>
+                    <div class="card-desc">
+                        Начинай с <strong>50 000₽</strong> и расти до <strong>250 000+ ₽/мес</strong>.<br>
+                        Доход растёт вместе с твоими навыками — никаких потолков.<br>
+                        <strong>Пассивный доход</strong> от создания шаблонов и повторных заказов.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><img src="./img/iconri.png" alt=""></div>
+                    <div class="card-title">Объём рынка</div>
+                    <div class="card-desc">
+                        Миллионы товаров на Wildberries и Ozon.<br>
+                        Каждому продавцу нужны <strong>качественные карточки</strong>.<br>
+                        Спрос огромен, а <strong>конкуренция низкая</strong> — клиентов хватит на всех.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- БЛОК 5: ПРОГРАММА КУРСА (зигзаг, тёмные тона)-->
+<section class="section section-dark">
+    <div class="corner corner-tl"></div>
+    <div class="corner corner-tr"></div>
+    <div class="corner corner-bl"></div>
+    <div class="corner corner-br"></div>
+
+    <div class="blob blob-left"></div>
+    <div class="blob blob-right"></div>
+    <div class="blob blob-center"></div>
+
+    <div class="content">
+        <h2 class="section-title">Программа курса: <span>7 дней до результата</span></h2>
+        <div class="section-sub">📅 Каждый день — новый модуль с практикой и домашним заданием</div>
+
+        <div class="program-grid-zigzag">
+            <!-- Модуль 1 (нечётный, слева) -->
+            <div class="module-card-zigzag">
+                <div class="module-header-zigzag">
+                    <span class="module-number-zigzag">01</span>
+                    <span class="module-icon-zigzag"><img src="./img/rocket.png" alt=""></span>
+                    <span class="module-title-zigzag">Погружение в тему карточек</span>
+                </div>
+                <ul class="module-list-zigzag">
+                    <li>Вводный урок: кто я и зачем создан этот курс</li>
+                    <li>Программа и как пройдут 7 дней</li>
+                    <li>Бонусные дни</li>
+                    <li>Формат обучения и личная поддержка</li>
+                    <li>Как проходить курс, чтобы выйти к результату</li>
+                </ul>
+                <div class="module-footer-zigzag">
+                    <span class="module-dz-zigzag">📝 ДЗ: нет</span>
+                </div>
+            </div>
+
+            <!-- Модуль 2 (чётный, справа) -->
+            <div class="module-card-zigzag">
+                <div class="module-header-zigzag">
+                    <span class="module-number-zigzag">02</span>
+                    <span class="module-icon-zigzag"><img src="./img/palitra.png" alt=""></span>
+                    <span class="module-title-zigzag">Основы работы дизайнера</span>
+                </div>
+                <ul class="module-list-zigzag">
+                    <li>Определение и суть дизайна карточек</li>
+                    <li>Почему это востребовано</li>
+                    <li>Ошибки продавцов без дизайна</li>
+                    <li>Возможности заработка для дизайнеров</li>
+                    <li>Выводы</li>
+                </ul>
+                <div class="module-footer-zigzag">
+                    <span class="module-dz-zigzag has-dz">📝 ДЗ: есть</span>
+                </div>
+            </div>
+
+            <!-- Модуль 3 (нечётный, слева) -->
+            <div class="module-card-zigzag">
+                <div class="module-header-zigzag">
+                    <span class="module-number-zigzag">03</span>
+                    <span class="module-icon-zigzag"><img src="./img/kist.png" alt=""></span>
+                    <span class="module-title-zigzag">Гайд по фотошопу от А до Я</span>
+                </div>
+                <ul class="module-list-zigzag">
+                    <li>Создание идеальной рабочей среды</li>
+                    <li>Оптимизация</li>
+                    <li>Удаление фона</li>
+                    <li>Инструменты и верхняя панель</li>
+                </ul>
+                <div class="module-footer-zigzag">
+                    <span class="module-dz-zigzag has-dz">📝 ДЗ: есть</span>
+                </div>
+            </div>
+
+            <!-- Модуль 4 (чётный, справа) -->
+            <div class="module-card-zigzag">
+                <div class="module-header-zigzag">
+                    <span class="module-number-zigzag">04</span>
+                    <span class="module-icon-zigzag"><img src="./img/meshok.png" alt=""></span>
+                    <span class="module-title-zigzag">Продающий дизайн</span>
+                </div>
+                <ul class="module-list-zigzag">
+                    <li>Композиция + практика</li>
+                    <li>Типографика + практика</li>
+                    <li>Колористика + практика</li>
+                    <li>Базовые свет и тени + практика</li>
+                </ul>
+                <div class="module-footer-zigzag">
+                    <span class="module-dz-zigzag has-dz">📝 ДЗ: есть</span>
+                </div>
+            </div>
+
+            <!-- Модуль 5 (нечётный, слева) -->
+            <div class="module-card-zigzag">
+                <div class="module-header-zigzag">
+                    <span class="module-number-zigzag">05</span>
+                    <span class="module-icon-zigzag"><img src="./img/papka.png" alt=""></span>
+                    <span class="module-title-zigzag">Портфолио и клиенты</span>
+                </div>
+                <ul class="module-list-zigzag">
+                    <li>Как создавать портфолио, какое оно должно быть</li>
+                    <li>Как упаковать свой профиль</li>
+                    <li>20 актуальных способов на рынке</li>
+                </ul>
+                <div class="module-footer-zigzag">
+                    <span class="module-dz-zigzag has-dz">📝 ДЗ: есть</span>
+                </div>
+            </div>
+
+            <!-- Модуль 6 (чётный, справа) -->
+            <div class="module-card-zigzag">
+                <div class="module-header-zigzag">
+                    <span class="module-number-zigzag">06</span>
+                    <span class="module-icon-zigzag"><img src="./img/neiro.png" alt=""></span>
+                    <span class="module-title-zigzag">Нейросети</span>
+                </div>
+                <ul class="module-list-zigzag">
+                    <li>Сервисы и нейросети для дизайнера</li>
+                    <li>Как правильно писать промты</li>
+                    <li>Как улучшить качество товара</li>
+                    <li>Как вырезать товар без потери качества</li>
+                </ul>
+                <div class="module-footer-zigzag">
+                    <span class="module-dz-zigzag has-dz">📝 ДЗ: есть</span>
+                </div>
+            </div>
+
+            <!-- Модуль 7 (нечётный, слева) -->
+            <div class="module-card-zigzag">
+                <div class="module-header-zigzag">
+                    <span class="module-number-zigzag">07</span>
+                    <span class="module-icon-zigzag"><img src="./img/star.png" alt=""></span>
+                    <span class="module-title-zigzag">Практика</span>
+                </div>
+                <ul class="module-list-zigzag">
+                    <li>Поэтапная карточка из 5 слайдов в стиле минимализма</li>
+                </ul>
+                <div class="module-footer-zigzag">
+                    <span class="module-dz-zigzag has-dz">📝 ДЗ: есть</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- БЛОК 6: РЕЗУЛЬТАТЫ -->
+<section class="section section-warm">
+    <div class="corner corner-tl"></div>
+    <div class="corner corner-tr"></div>
+    <div class="corner corner-bl"></div>
+    <div class="corner corner-br"></div>
+
+    <div class="blob blob-left"></div>
+    <div class="blob blob-right"></div>
+    <div class="blob blob-center"></div>
+
+    <div class="content">
+        <h2 class="section-title" style="text-align: center;">Твой результат <span>после экспресс-курса</span></h2>
+
+        <div class="results-grid-warm">
+            <!-- Результат 1 -->
+            <div class="result-card-warm">
+                <div class="result-image-warm">
+                    <img src="./img/rez1.png" alt="Результат" />
+                </div>
+                <div class="result-body-warm">
+                    <div class="result-title-warm">Поймёшь полную схему:</div>
+                    <div class="result-desc-warm">
+                        <strong>как выйти с 0 на 50–250 000₽/мес</strong><br>
+                        на дизайне карточек
+                    </div>
+                </div>
+            </div>
+
+            <!-- Результат 2 -->
+            <div class="result-card-warm">
+                <div class="result-image-warm">
+                    <img src="./img/rez2.png" alt="Результат" />
+                </div>
+                <div class="result-body-warm">
+                    <div class="result-title-warm">Поймёшь как создать</div>
+                    <div class="result-desc-warm">
+                        <strong>мощное портфолио</strong>,<br>
+                        которое будет продавать за тебя
+                    </div>
+                </div>
+            </div>
+
+            <!-- Результат 3 -->
+            <div class="result-card-warm">
+                <div class="result-image-warm">
+                    <img src="./img/rez3.png" alt="Результат" />
+                </div>
+                <div class="result-body-warm">
+                    <div class="result-title-warm">Поймёшь как</div>
+                    <div class="result-desc-warm">
+                        <strong>искать клиентов</strong> и<br>
+                        продавать на высокий чек
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Кнопка -->
+        <div style="text-align: center; margin-top: 48px;">
+            <a href="#" class="btn btn-large-warm">Хочу заказать!</a>
+        </div>
+    </div>
+</section>
+
+<!-- БЛОК 7: БОНУСЫ (баннер)-->
+<section class="section section-bonus">
+    <div class="corner corner-tl"></div>
+    <div class="corner corner-tr"></div>
+    <div class="corner corner-bl"></div>
+    <div class="corner corner-br"></div>
+
+    <div class="blob blob-left"></div>
+    <div class="blob blob-right"></div>
+    <div class="blob blob-center"></div>
+
+    <div class="content">
+        <div class="bonus-banner">
+            <div class="bonus-badge">🎁 БОНУСЫ</div>
+            <h2 class="bonus-title">Всё, что ты получишь <span>сверх программы</span></h2>
+            <p class="bonus-sub">Помимо основной программы, тебя ждут дополнительные плюшки, которые ускорят твой результат</p>
+
+            <div class="bonus-grid">
+                <div class="bonus-item">
+                    <div class="bonus-icon"><img src="./img/fire.png" alt=""></div>
+                    <div class="bonus-text">Мотивация от меня</div>
+                </div>
+                <div class="bonus-item">
+                    <div class="bonus-icon"><img src="./img/book.png" alt=""></div>
+                    <div class="bonus-text">Структурированные уроки с конспектами</div>
+                </div>
+                <div class="bonus-item">
+                    <div class="bonus-icon"><img src="./img/mess.png" alt=""></div>
+                    <div class="bonus-text">14 дней поддержки лично от меня</div>
+                </div>
+                <div class="bonus-item">
+                    <div class="bonus-icon"><img src="./img/gal.png" alt=""></div>
+                    <div class="bonus-text">Домашние задания с моей личной проверкой</div>
+                </div>
+                <div class="bonus-item">
+                    <div class="bonus-icon"><img src="./img/roc.png" alt=""></div>
+                    <div class="bonus-text">Лучшие ученики получат настоящие заказы под процент лично от меня</div>
+                </div>
+                <div class="bonus-item">
+                    <div class="bonus-icon"><img src="./img/mis.png" alt=""></div>
+                    <div class="bonus-text">Различные полезняшки</div>
+                </div>
+                <div class="bonus-item">
+                    <div class="bonus-icon"><img src="./img/mont.png" alt=""></div>
+                    <div class="bonus-text">Мотивационные ролики и кружочки от меня</div>
+                </div>
+            </div>
+
+            <div class="bonus-cta">
+                <a href="#" class="btn btn-bonus">Записаться со всеми бонусами →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- БЛОК 8: УНИВЕРСАЛЬНЫЙ ТАРИФ-->
+<section class="section section-tariff-dark">
+    <div class="corner corner-tl"></div>
+    <div class="corner corner-tr"></div>
+    <div class="corner corner-bl"></div>
+    <div class="corner corner-br"></div>
+
+    <div class="blob blob-left"></div>
+    <div class="blob blob-right"></div>
+    <div class="blob blob-center"></div>
+
+    <div class="content">
+        <!-- Заголовок -->
+        <div class="tariff-header-dark">
+            <div class="tariff-badge-dark">🔥 УНИВЕРСАЛЬНЫЙ ТАРИФ</div>
+            <h2 class="tariff-title-dark">В который включено <span>всё и сразу!</span></h2>
+        </div>
+
+        <!-- Скидка + таймер -->
+        <div class="tariff-discount-dark">
+            <div class="discount-label-dark">Скидка 70% актуальна 24 часа</div>
+            <div class="tariff-timer-dark" id="tariffTimerDark">
+                <div class="timer-block-dark">
+                    <span class="timer-digits-dark" id="hoursDark">22</span>
+                    <span class="timer-label-dark">часов</span>
+                </div>
+                <span class="timer-separator-dark">:</span>
+                <div class="timer-block-dark">
+                    <span class="timer-digits-dark" id="minutesDark">58</span>
+                    <span class="timer-label-dark">минут</span>
+                </div>
+                <span class="timer-separator-dark">:</span>
+                <div class="timer-block-dark">
+                    <span class="timer-digits-dark" id="secondsDark">53</span>
+                    <span class="timer-label-dark">секунд</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Преимущества (сетка 2 колонки) -->
+        <div class="tariff-grid-dark">
+            <div class="tariff-item-dark">
+                <span class="tariff-check-dark">✓</span>
+                <span class="tariff-text-dark">Доступ ко всем урокам в Telegram-боте</span>
+            </div>
+            <div class="tariff-item-dark">
+                <span class="tariff-check-dark">✓</span>
+                <span class="tariff-text-dark">Чат с куратором</span>
+            </div>
+            <div class="tariff-item-dark">
+                <span class="tariff-check-dark">✓</span>
+                <span class="tariff-text-dark">Экзаменационная работа с проверкой</span>
+            </div>
+            <div class="tariff-item-dark">
+                <span class="tariff-check-dark">✓</span>
+                <span class="tariff-text-dark">Бонусные материалы</span>
+            </div>
+            <div class="tariff-item-dark">
+                <span class="tariff-check-dark">✓</span>
+                <span class="tariff-text-dark">Бессрочный доступ к спринту</span>
+            </div>
+        </div>
+
+        <!-- Блок Telegram + бонусы -->
+        <div class="tariff-bonus-dark">
+            <div class="bonus-header-dark">
+                <span class="bonus-icon-dark"><img src="./img/tg.png" alt=""></span>
+                <span class="bonus-label-dark">Telegram</span>
+            </div>
+            <div class="bonus-list-dark">
+                <div class="bonus-item-dark">
+                    <span class="bonus-badge-dark">🎁 Бонус:</span>
+                    <span class="bonus-text-dark">урок по нейросетям</span>
+                </div>
+                <div class="bonus-item-dark">
+                    <span class="bonus-badge-dark">🎁 Бонус:</span>
+                    <span class="bonus-text-dark">большой эфир про клиентов</span>
+                </div>
+                <div class="bonus-item-dark">
+                    <span class="bonus-badge-dark">🎁 Бонус:</span>
+                    <span class="bonus-text-dark">именной сертификат о прохождении</span>
+                </div>
+                <div class="bonus-item-dark highlight">
+                    <span class="bonus-badge-dark">🔥</span>
+                    <span class="bonus-text-dark">Доступ в закрытый чат с клиентами <span style="color: rgba(245,237,231,0.4); font-weight: 400;">(для учеников, сделавших все задания спринта)</span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Цена и окупаемость -->
+        <div class="tariff-price-dark">
+            <div class="price-block-dark">
+                <div class="price-old-dark">
+                    <span class="price-old-label-dark">от</span>
+                    <span class="price-old-value-dark">25 000₽</span>
+                </div>
+                <div class="price-current-dark">
+                    <span class="price-current-label-dark">от</span>
+                    <span class="price-current-value-dark">7 500₽</span>
+                </div>
+                <div class="price-per-month-dark">
+                    <span class="per-month-value-dark">830₽</span>
+                    <span class="per-month-label-dark">/мес</span>
+                </div>
+            </div>
+            <div class="price-return-dark">
+                <span class="return-icon-dark">💰</span>
+                <span class="return-text-dark">≈2–3 заказа на дизайне карточек и ты окупишь участие в спринте</span>
+            </div>
+        </div>
+
+        <!-- Кнопка -->
+        <div class="tariff-cta-dark">
+            <a href="#" class="btn btn-tariff-dark">ОПЛАТИТЬ ОБУЧЕНИЕ</a>
+        </div>
+    </div>
+</section>
+
+<!-- БЛОК 9: НАЧНИ ОБУЧЕНИЕ БЕСПЛАТНО -->
+<section class="section section-start-warm">
+    <div class="corner corner-tl"></div>
+    <div class="corner corner-tr"></div>
+    <div class="corner corner-bl"></div>
+    <div class="corner corner-br"></div>
+
+    <div class="blob blob-left"></div>
+    <div class="blob blob-right"></div>
+    <div class="blob blob-center"></div>
+
+    <!-- Декоративные звёздочки -->
+    <div class="start-sparkle-warm" style="top: 30px; left: 10%; font-size: 32px;">✦</div>
+    <div class="start-sparkle-warm" style="bottom: 40px; right: 8%; font-size: 28px;">✦</div>
+    <div class="start-sparkle-warm" style="top: 45%; right: 5%; font-size: 20px;">✦</div>
+    <div class="start-sparkle-warm" style="bottom: 30%; left: 5%; font-size: 22px;">✦</div>
+
+    <div class="content">
+        <!-- Заголовок -->
+        <h2 class="start-title-warm">Начни обучение <span>бесплатно</span> прямо сейчас!</h2>
+
+        <!-- Описание -->
+        <p class="start-desc-warm">
+            Хочешь стартовать, но не готов платить всю сумму сразу?<br>
+            <strong>Оплати в рассрочку без переплат на 3 / 6 / 9 месяцев</strong>
+        </p>
+
+        <!-- Акцент: первый платёж -->
+        <div class="start-accent-warm">
+            <span class="accent-icon-warm"><img src="./img/mis.png" alt=""></span>
+            <span class="accent-text-warm">Первый платёж — <strong>только через месяц!</strong></span>
+        </div>
+
+        <!-- Подзаголовок -->
+        <p class="start-sub-warm">
+            Проходи спринт, получай результат, находи первых клиентов — и только потом начнёшь платить
+        </p>
+
+        <!-- Кнопка -->
+        <div class="start-cta-warm">
+            <a href="#" class="btn btn-start-warm">ГОТОВ НАЧАТЬ!</a>
+        </div>
+
+        <!-- Разделитель -->
+        <div class="start-divider-warm">
+            <span class="divider-line-warm"></span>
+            <span class="divider-icon-warm">✦</span>
+            <span class="divider-line-warm"></span>
+        </div>
+
+        <!-- Поддержка -->
+        <div class="start-support-warm">
+            <div class="support-label-warm">Возникли трудности или остались вопросы по спринту?</div>
+            <a href="#" class="btn btn-support-warm">СЛУЖБА ПОДДЕРЖКИ</a>
+        </div>
+    </div>
+</section>
+
+<!-- БЛОК 10: А ТЕПЕРЬ РЕШАЙ САМ -->
+<section class="section section-final">
+    <div class="corner corner-tl"></div>
+    <div class="corner corner-tr"></div>
+    <div class="corner corner-bl"></div>
+    <div class="corner corner-br"></div>
+
+    <div class="blob blob-left"></div>
+    <div class="blob blob-right"></div>
+    <div class="blob blob-center"></div>
+
+    <!-- Декоративные звёздочки -->
+    <div class="final-sparkle" style="top: 30px; left: 8%; font-size: 34px;">✦</div>
+    <div class="final-sparkle" style="bottom: 40px; right: 6%; font-size: 30px;">✦</div>
+    <div class="final-sparkle" style="top: 50%; right: 4%; font-size: 22px;">✦</div>
+    <div class="final-sparkle" style="bottom: 25%; left: 4%; font-size: 24px;">✦</div>
+
+    <div class="content">
+        <!-- Заголовок -->
+        <h2 class="final-title">А теперь решай сам, <span>что ты выберешь</span></h2>
+
+        <!-- Таймер -->
+        <div class="final-timer">
+            <span class="timer-label-final">до конца спец.условий</span>
+            <div class="timer-digits-final" id="finalTimer">
+                <span class="timer-digit" id="hoursFinal">23</span>
+                <span class="timer-sep-final">:</span>
+                <span class="timer-digit" id="minutesFinal">23</span>
+                <span class="timer-sep-final">:</span>
+                <span class="timer-digit" id="secondsFinal">44</span>
+            </div>
+        </div>
+
+        <!-- Два пути -->
+        <div class="final-paths">
+            <!-- Путь 1 -->
+            <div class="path-card path-1">
+                <div class="path-number">Путь 1</div>
+                <div class="path-content">
+                    <p class="path-desc">
+                        Потратить тысячи часов на самостоятельное обучение, бесконечно искать клиентов и не понимать, почему их нет...
+                    </p>
+                    <p class="path-result">Чтобы потом все равно прийти на обучение</p>
+                </div>
+            </div>
+
+            <!-- Путь 2 -->
+            <div class="path-card path-2">
+                <div class="path-number">Путь 2</div>
+                <div class="path-content">
+                    <p class="path-desc">
+                        Учиться на чужих ошибках, сохранить кучу времени, чётко понимать, что нужно делать для результата, получив знания того, кто уже прошел путь от новичка до эксперта
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Кнопки -->
+        <div class="final-buttons">
+            <a href="#" class="btn btn-final-primary">Стать востребованным дизайнером</a>
+            <a href="#" class="btn btn-final-secondary">Задать вопрос по мини-курсу</a>
+        </div>
+    </div>
+</section>
+    <!-- СКРИПТ -->
+    <script src="./script.js"></script>
+</body>
+</html>
